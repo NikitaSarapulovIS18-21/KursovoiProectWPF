@@ -1,0 +1,23 @@
+﻿<Window x:Class="HospitalSN_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalSN_App"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="390" Width="348"
+        Background="#FFAAADFB">
+    <StackPanel Margin="-2,62,2,53">
+        <Label Width="250" Padding="25 0 0 0" FontSize="24" Content="Логин"/>
+        <TextBox x:Name="log" Width="250" Height="40" VerticalContentAlignment="Center" Padding="10,0,0,0" FontSize="20"></TextBox>
+        <Label Width="200" FontSize="24" Content="Пароль"/>
+        <PasswordBox PasswordChar="*" x:Name="pass" Width="250" Height="40" VerticalContentAlignment="Center" Padding="10,0,0,0" FontSize="20"></PasswordBox>
+        <Button BorderBrush="Black" Background="White" Width="185" Height="40" Content="Авторизироваться" Margin="0,25,0,0" FontSize="20" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </StackPanel>
+</Window>
